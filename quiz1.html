@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FabioMania</title>
+</head>
+<body>
+   
+    <div id="google_translate_element" class="google"></div> 
+<div class="todo">
+<div class="container">
+    <div class="volver"><a href="./index.html">Volver al Inicio</a></div>
+    <div>
+        <h1 id="puntuacion">Puntuación: 0</h1>
+        <h1 id="numero">Pregunta nº: 0</h1>
+    </div>
+    <div id="question"></div>
+    <button onclick="prox_quest1()" class="txt" id="pregunta">Saca</button>
+    <div id="answer_button" class="btn-grid">
+        <button class="btn1" onclick="prox_quest1()" id="1">Respuesta 1</button><br>
+        <button class="btn2" onclick="prox_quest2()" id="2">Respuesta 2</button><br>
+        <button class="btn3" onclick="prox_quest2()" id="3">Respuesta 3</button><br>
+        <button class="btn4" onclick="prox_quest2()" id="4">Respuesta 4</button><br>
+    </div>
+</div>  
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+            }
+    </script>
+    
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        let i = 0;
+        let o = 0;
+
+function prox_quest2() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this, i);
+      i++;
+    }
+  };
+  xhttp.open("GET", "./quizz1.xml", true);
+  xhttp.send();
+}
+
+function prox_quest1() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this, i);
+      i++;
+      o++;
+    }
+  };
+  xhttp.open("GET", "./quizz1.xml", true);
+  xhttp.send();
+}
+
+
+
+function myFunction(xml, i) {
+  var xmlDoc = xml.responseXML;
+  var x = xmlDoc.getElementsByTagName("question");
+  q = x[i].getElementsByTagName("wording")[0].childNodes[0].nodeValue;
+
+  r1 =
+    x[i].getElementsByTagName("choices")[0].childNodes[1].childNodes[0]
+      .nodeValue;
+  r2 =
+    x[i].getElementsByTagName("choices")[0].childNodes[3].childNodes[0]
+      .nodeValue;
+  r3 =
+    x[i].getElementsByTagName("choices")[0].childNodes[5].childNodes[0]
+      .nodeValue;
+  r4 =
+    x[i].getElementsByTagName("choices")[0].childNodes[7].childNodes[0]
+      .nodeValue;
+
+  res = document.getElementById('numero').innerHTML = 'Pregunta: ' + (i + 1)
+  punt = document.getElementById('puntuacion').innerHTML = 'Puntuación: ' + o
+
+
+  document.getElementById("pregunta").innerHTML = q;
+  document.getElementById("1").innerHTML = r1;
+  document.getElementById("2").innerHTML = r2;
+  document.getElementById("3").innerHTML = r3;
+  document.getElementById("4").innerHTML = r4;
+
+}
+      </script>
+</body>
+</html>

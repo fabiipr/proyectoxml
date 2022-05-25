@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE test [
+<!ELEMENT test (question+)>
+<!ELEMENT question (wording,choices)>
+<!ELEMENT wording (#PCDATA)>
+<!ELEMENT choices (choice+)>
+<!ELEMENT choice (#PCDATA)>
+ 
+<!ATTLIST question id CDATA #REQUIRED>
+<!ATTLIST choice correct (yes|no) "no">
+]>
+
+<test>
+<question id='1'>
+    <wording>¿De qué nacionalidad era Juana de Arco?</wording>
+    <choices>
+    <choice correct='yes'>Francesa</choice>
+    <choice correct='no'>Inglesa</choice>
+    <choice correct='no'>Italiana</choice>
+    <choice correct='no'>Española</choice>
+    </choices>
+    </question>
+
+<question id='2'>
+    <wording>¿Quién dibujo al famoso Hombre de Vitruvio?</wording>
+    <choices>
+    <choice correct='yes'>Leonardo da Vinci</choice>
+    <choice correct='no'>Dalí</choice>
+    <choice correct='no'>Rubens</choice>
+    <choice correct='no'>Miguel Angel</choice>
+    </choices>
+    </question>
+
+    <question id='3'>
+    <wording>¿Qué famoso filósofo fue maestro de Alejandro Magno durante cinco años?</wording>
+    <choices>
+    <choice correct='yes'>Aristóteles</choice>
+    <choice correct='no'> Platón</choice>
+    <choice correct='no'>Sócrates</choice>
+    <choice correct='no'>Jose Expósito</choice>
+    </choices>
+    </question>
+
+    <question id='4'>
+    <wording>¿Quién fue el último zar de Rusia?</wording>
+    <choices>
+    <choice correct='yes'>Nicolas II</choice>
+    <choice correct='no'>Pedro I el Grande</choice>
+    <choice correct='no'> Alejandro II</choice>
+    <choice correct='no'>El abuelo de Putin</choice>
+    </choices>
+    </question>
+
+    <question id='5'>
+    <wording>¿Quienes eran los templarios?</wording>
+    <choices>
+    <choice correct='yes'>Era una orden religiosa y militar</choice>
+    <choice correct='no'> Era una orden religiosa que existió durante la Roma de Diocleciano</choice>
+    <choice correct='no'>Eran una sociedad que creía en Dios pero no en la Virgen María</choice>
+    <choice correct='no'>Eran ateos</choice>
+    </choices>
+    </question>
+
+    <question id='6'>
+    <wording>¿Qué inició la Segunda Guerra Mundial?</wording>
+    <choices>
+    <choice correct='yes'> Alemania invadió Polonia.</choice>
+    <choice correct='no'>El asesinato del archiduque Francisco Fernando.</choice>
+    <choice correct='no'>Hitler invadió Austria.</choice>
+    <choice correct='no'>Hitler se unió a Franco</choice>
+    </choices>
+    </question>
+
+    <question id='7'>
+    <wording>¿Cómo comenzó la Primera Guerra Mundial?</wording>
+    <choices>
+    <choice correct='yes'> Con el asesinato del archiduque Francisco Fernando.</choice>
+    <choice correct='no'>Con la batalla de Gallipoli</choice>
+    <choice correct='no'>Con el intento de asesinato del príncipe belga Leopold</choice>
+    <choice correct='no'>Con el asesinato de Napoleón</choice>
+    </choices>
+    </question>
+
+    <question id='8'>
+    <wording>¿Es la prehistoria la etapa más larga del ser humano?</wording>
+    <choices>
+    <choice correct='yes'>Sí</choice>
+    <choice correct='no'>No</choice>
+    <choice correct='no'>Es el Paleolitico</choice>
+    <choice correct='no'>Es el Neolitico</choice>
+    </choices>
+    </question>
+
+
+    <question id='9'>
+    <wording>En qué año descubrió Cristóbal Colón, América.</wording>
+    <choices>
+    <choice correct='yes'>En 1492</choice>
+    <choice correct='no'>En 1592</choice>
+    <choice correct='no'>En 1498</choice>
+    <choice correct='no'>En 1493</choice>
+    </choices>
+    </question>
+
+    <question id='10'>
+    <wording>¿De qué año es la primera Constitución española, la Pepa?</wording>
+    <choices>
+    <choice correct='yes'>1812</choice>
+    <choice correct='no'>1978</choice>
+    <choice correct='no'>1931</choice>
+    <choice correct='no'>1830</choice>
+    </choices>
+    </question>
+
+    <question id='11'>
+    <wording>¿De qué nacionalidad era Adolf Hitler?</wording>
+    <choices>
+    <choice correct='yes'> Nació en Austria</choice>
+    <choice correct='no'>Nació en Alemania</choice>
+    <choice correct='no'>Nació en Polonia</choice>
+    <choice correct='no'>Nació en España</choice>
+    </choices>
+    </question>
+
+    <question id='12'>
+    <wording>¿A qué emperador romano asesinó un grupo de senadores?</wording>
+    <choices>
+    <choice correct='yes'>Julio César</choice>
+    <choice correct='no'>Nerón</choice>
+    <choice correct='no'>Calígula</choice>
+    <choice correct='no'>Ninguno de las anteriores</choice>
+    </choices>
+    </question>
+
+    <question id='13'>
+    <wording>¿Quién dijo que la tierra giraba alrededor del sol?</wording>
+    <choices>
+    <choice correct='yes'>Aristarco de Samos</choice>
+    <choice correct='no'>Galileo Galilei</choice>
+    <choice correct='no'>Nicolás Copérnico</choice>
+    <choice correct='no'>Todos los anteriores</choice>
+    </choices>
+    </question>
+
+    <question id='14'>
+    <wording>¿Qué institución eclesiástica mandó a la hoguera a hombres y mujeres por brujos, impuros y herejes?</wording>
+    <choices>
+    <choice correct='yes'>La Santa Inquisición.</choice>
+    <choice correct='no'>La orden del temple.</choice>
+    <choice correct='no'>El tribunal de la Rota.</choice>
+    <choice correct='no'>La Santa Orden</choice>
+    </choices>
+    </question>
+
+    <question id='15'>
+    <wording>¿Cuál es el antiguo nombre de San Petersburgo?</wording>
+    <choices>
+    <choice correct='yes'>Leningrado</choice>
+    <choice correct='no'>San Petersburgo</choice>
+    <choice correct='no'>Stalingrado</choice>
+    <choice correct='no'>Ninguno</choice>
+    </choices>
+    </question>
+
+    <question id='16'>
+    <wording>¿Qué famosa batalla perdió y dejó humillado a Napoleón Bonaparte?</wording>
+    <choices>
+    <choice correct='yes'> Batalla de Waterloo</choice>
+    <choice correct='no'> Batalla de Austerlitz</choice>
+    <choice correct='no'>La campaña de Trafalgar</choice>
+    <choice correct='no'>La Batalla de Lepanto</choice>
+    </choices>
+    </question>
+
+    <question id='17'>
+    <wording> ¿Quién nació antes Jesucristo o Mahoma?</wording>
+    <choices>
+    <choice correct='yes'>Jesucristo</choice>
+    <choice correct='no'>Mahoma</choice>
+    <choice correct='no'>Los dos</choice>
+    <choice correct='no'>Ninguno</choice>
+    </choices>
+    </question>
+
+    <question id='18'>
+    <wording>¿Quién fue el primer presidente de los Estados Unidos?</wording>
+    <choices>
+    <choice correct='yes'>George Wasghington</choice>
+    <choice correct='no'> John Adams</choice>
+    <choice correct='no'> Thomas Jefferson</choice>
+    <choice correct='no'>John Fitzgerald Kennedy</choice>
+    </choices>  
+    </question>
+
+    <question id='19'>
+    <wording>¿Qué isla generó un conflicto entre Reino Unido y Argentina?</wording>
+    <choices>
+    <choice correct='yes'>Las islas Malvinas</choice>
+    <choice correct='no'>Perejil</choice>
+    <choice correct='no'>Islas Marianas</choice>
+    <choice correct='no'>Islas Canarias</choice>
+    </choices>
+    </question>
+
+    <question id='20'>
+    <wording>¿De qué nacionalidad era Ernesto Ché Guevara?</wording>
+    <choices>
+    <choice correct='yes'>Argentino</choice>
+    <choice correct='no'>Boliviano</choice>
+    <choice correct='no'>Mexicano</choice>
+    <choice correct='no'>Alemán</choice>
+    </choices>
+    </question>
+    </test>

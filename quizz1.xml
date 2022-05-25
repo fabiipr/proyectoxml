@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE test [
+<!ELEMENT test (question+)>
+<!ELEMENT question (wording,choices)>
+<!ELEMENT wording (#PCDATA)>
+<!ELEMENT choices (choice+)>
+<!ELEMENT choice (#PCDATA)>
+ 
+<!ATTLIST question id CDATA #REQUIRED>
+<!ATTLIST choice correct (yes|no) "no">
+]>
+
+
+
+<test>
+<question id='1'>
+    <wording>¿En que año se jugó el primer mundial de fútbol?</wording>
+    <choices>
+    <choice correct='yes'>1930</choice>
+    <choice correct='no'>1936</choice>
+    <choice correct='no'>1940</choice>
+    <choice correct='no'>1932</choice>
+    </choices>
+    </question>
+
+ 
+<question id='2'>
+    <wording>¿Quién marcó el gol que le dió el mundial a Alemania en 2014?</wording>
+    <choices>
+    <choice correct='yes'>Mario Gotze</choice>
+    <choice  correct='no'>Thomas Muller</choice>
+    <choice  correct='no'>Antonio Rudiger</choice>
+    <choice  correct='no'>Mats Hummels</choice>
+    </choices>
+    </question>
+
+
+<question id='3'>
+    <wording>¿Quién marcó el gol de la famosa 'Séptima'?</wording>
+    <choices>
+    <choice correct='yes'>Mijatovic</choice>
+    <choice correct='no'>Seedorf</choice>
+    <choice correct='no'>Roberto Carlos</choice>
+    <choice correct='no'>Raúl</choice>
+    </choices>
+    </question>
+
+ 
+<question id='4'>
+    <wording>¿Quién es el jugador que tiene el 'Superbalón de Oro'?</wording>
+    <choices>
+    <choice correct='yes'>Di estéfano</choice>
+    <choice correct='no'>Maradona</choice>
+    <choice correct='no'>Pelé</choice>
+    <choice correct='no'>Puskas</choice>
+    </choices>
+    </question>
+
+
+<question id='5'>
+    <wording>¿Cuál es el minuto más temido por los 'colchoneros'?</wording>
+    <choices>
+    <choice correct='yes'>92,48</choice>
+    <choice correct='no'>93</choice>
+    <choice correct='no'>92,30</choice>
+    <choice correct='no'>90,49</choice>
+    </choices>
+    </question>
+
+    
+<question id='6'>
+    <wording>¿Quién ganó la eurocopa 2004?</wording>
+    <choices>
+    <choice correct='yes'>Grecia</choice>
+    <choice correct='no'>Polonia</choice>
+    <choice correct='no'>Portugal</choice>
+    <choice correct='no'>Italia</choice>
+    </choices>
+    </question>
+
+    
+<question id='7'>
+    <wording>¿Quién es el máximos goleador de la Champions?</wording>
+    <choices>
+    <choice correct='yes'>Cristiano Ronaldo</choice>
+    <choice correct='no'>Messi</choice>
+    <choice correct='no'>Lewandowski</choice>
+    <choice correct='no'>Benzema</choice>
+    </choices>
+    </question>
+
+    
+<question id='8'>
+    <wording> ¿Cuándo fue el último ascenso de Recreativo de Huelva a Primera ?</wording>
+    <choices>
+    <choice correct='yes'>4 de junio de 2006</choice>
+    <choice correct='no'>12 de junio de 2006</choice>
+    <choice correct='no'>7 de junio de 2007</choice>
+    <choice correct='no'>9 de junio de 2006</choice>
+    </choices>
+    </question>
+
+    
+<question id='9'>
+    <wording>¿Cuántas ligas a ganado seguida Alaba?</wording>
+    <choices>
+    <choice correct='yes'>10</choice>
+    <choice correct='no'>7</choice>
+    <choice correct='no'>8</choice>
+    <choice correct='no'>9</choice>
+    </choices>
+    </question>
+
+<question id='10'>
+    <wording>¿En que equipo debutó Zidane?</wording>
+    <choices>
+    <choice correct='yes'>Cannes</choice>
+    <choice correct='no'>Girodins</choice>
+    <choice correct='no'>Nantes</choice>
+    <choice correct='no'>Lille</choice>
+    </choices>
+    </question>
+
+    
+<question id='11'>
+    <wording>¿En que equipo no jugó jesé?</wording>
+    <choices>
+    <choice correct='yes'>Juventus</choice>
+    <choice correct='no'>PSG</choice>
+    <choice correct='no'>Sporting de Lisboa</choice>
+    <choice correct='no'>Stoke city</choice>
+    </choices>
+    </question>
+
+    
+<question id='12'>
+    <wording>¿Cuántas Ligas tiene el Real Madrid?</wording>
+    <choices>
+    <choice correct='yes'>35</choice>
+    <choice correct='no'>34</choice>
+    <choice correct='no'>32</choice>
+    <choice correct='no'>33</choice>
+    </choices>
+    </question>
+
+    
+<question id='13'>
+    <wording>¿En qué año rompió el record de más goles en una edición de Champions Cristiano?</wording>
+    <choices>
+    <choice correct='yes'>2014</choice>
+    <choice correct='no'>2016</choice>
+    <choice correct='no'>2012</choice>
+    <choice correct='no'>2018</choice>
+    </choices>
+    </question>
+
+    
+<question id='14'>
+    <wording>¿A qué jugador se le conoce como 'el Apache'?</wording>
+    <choices>
+    <choice correct='yes'>Carlos Tévez</choice>
+    <choice correct='no'>Luis Suárez</choice>
+    <choice correct='no'>Diego Milito</choice>
+    <choice correct='no'>Diego Forlán</choice>
+    </choices>
+    </question>
+    
+<question id='15'>
+    <wording>¿Quién ha ganado la última Coppa italiana?</wording>
+    <choices>
+    <choice correct='yes'>Inter de Milán</choice>
+    <choice correct='no'>Ac Milán</choice>
+    <choice correct='no'>Juventus</choice>
+    <choice correct='no'>Nápoles</choice>
+    </choices>
+    </question>
+
+    
+
+<question id='16'>
+    <wording>¿Cuántos equipos diferentes han conseguido ganar un campeonato de Liga de primera división?</wording>
+    <choices>
+    <choice correct='yes'>9</choice>
+    <choice correct='no'>12</choice>
+    <choice correct='no'>6</choice>
+    <choice correct='no'>10</choice>
+    </choices>
+    </question>
+
+    <question id='17'>
+    <wording>¿En que año debutó Camavinga con el Madrid?</wording>
+    <choices>
+    <choice correct='yes'>2021</choice>
+    <choice correct='no'>2022</choice>
+    <choice correct='no'>2020</choice>
+    <choice correct='no'>Enero 2021</choice>
+    </choices>
+    </question>
+
+    <question id='18'>
+    <wording>¿Qué equipo recibió la mayor goleada de la liga?</wording>
+    <choices>
+    <choice correct='yes'>F.C. Barcelona</choice>
+    <choice correct='no'>Rayo Vallecano</choice>
+    <choice correct='no'>Alavés</choice>
+    <choice correct='no'>Almería</choice>
+    </choices>
+    </question>
+
+
+<question id='19'>
+    <wording>¿Qué jugador tiene más goles con la selección española?</wording>
+    <choices>
+    <choice correct='yes'>Villa</choice>
+    <choice correct='no'>Torres</choice>
+    <choice correct='no'>Raúl</choice>
+    <choice correct='no'>Morata</choice>
+    </choices>
+    </question>
+    
+<question id='20'>
+    <wording>¿En qué año fue España organizador de la copa del mundo?</wording>
+    <choices>
+    <choice correct='yes'>1982</choice>
+    <choice correct='no'>1986</choice>
+    <choice correct='no'>1978</choice>
+    <choice correct='no'>1990</choice>
+    </choices>
+    </question>
+</test>
